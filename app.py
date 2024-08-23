@@ -20,7 +20,7 @@ class ScholarSearchEngine:
     
     def fetch_google_scholar_results(self, query, num_results):
         params = {
-            "api_key": os.getenv('SERPAPI_API_KEY'),
+            "api_key": os.getenv('serpapi_api_key'),
             "engine": "google_scholar",
             "q": query,
             "num": num_results,
