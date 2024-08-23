@@ -1,4 +1,4 @@
 serpapi
+google-search-results
 mistralai
 anthropic
-google-search-results
