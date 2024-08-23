@@ -30,7 +30,7 @@ class ScholarSearchEngine:
         
         search = serpapi.search(params)
         # results = search.get_dict()
-        return results.get("organic_results", [])
+        return search.get("organic_results", [])
 
     def format_scholar_results(self, search_data):
         formatted_results = []
