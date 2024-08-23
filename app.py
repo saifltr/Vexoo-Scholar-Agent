@@ -1,5 +1,6 @@
 import streamlit as st
-from serpapi import GoogleSearch
+# from serpapi import GoogleSearch
+import serpapi
 from mistralai_azure import MistralAzure
 from datetime import datetime
 import os
@@ -27,7 +28,7 @@ class ScholarSearchEngine:
             "as_ylo": datetime.now().year - 5
         }
         
-        search = GoogleSearch(params)
+        search = serpapi.search(params)
         results = search.get_dict()
         return results.get("organic_results", [])
 
